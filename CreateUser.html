@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <h1 style="color: red;">Usuario</h1>
+  <form action="" method="get">
+    <label for="Nombre">Nombre:</label>
+    <input type="text" id="Nombre"><br>
+    <label for="Apellido">Apellido:</label>
+    <input type="text" id="Apellido"><br>
+    <label for="Cedula">Cedula:</label>
+    <input type="number" id="Cedula"><br>
+    <label for="Usuario">Usuario:</label>
+    <input type="email" id="Usuario"><br>
+    <label for="Contraseña">Contraseña:</label>
+    <input type="text" id="Contraseña"><br>
+    <button type="submit" onclick="imprimir_Nombre()">Enviar</button><br><br>
+
+</form>
+
+<script>
+    
+
+  document.addEventListener('DOMContetLoaded', function (){
+  
+
+
+  }, false);
+
+      const imprimir_Nombre=()=>{
+
+          const nombre = document.getElementById("Nombre");  
+          console.log(nombre.value);
+
+          const apellido = document.getElementById("Apellido");
+          console.log(apellido.value);
+
+          const cedula = document.getElementById("Cedula");
+          console.log(cedula.value);
+
+          const usuario = document.getElementById("Usuario");
+          console.log(usuario.value);
+
+          const contraseña = document.getElementById("Contraseña");
+          console.log(contraseña.value);
+
+      }
+      
+
+  </script>
+  
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+  const Usuario=()=>{
+
+         var datos= document.getElementById("Nombre").value;
+
+         var datos= document.getElementById("Apellido").value;
+
+         var datos= document.getElementById("Cedula").value;
+
+         var datos= document.getElementById("Contraseña").value;
+
+         var informacion= ("Nombre", "Apellido", "Cedula", "Contraseña").value;
+
+         console.log(informacion);
+
+         
+     }
+
+
+</script>

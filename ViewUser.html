@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 style="color: rgb(126, 216, 132);">Registro</h1>
+        <table class="default" border="2px"id="usersTable">
+
+
+            <thead>
+          
+              <th>Usuario</th>
+          
+              <th>Nombre</th>
+          
+              <th>Apellido</th>
+          
+              <th>Cedula</th>
+
+              <th>Opciones</th>
+          
+            </thead>
+          
+           
+          
+          </table>
+
+          <script>
+
+            let objUsuario =[{usuario:"Mario-19londono@hotmail.com",
+                            nombre:"Josè Mario",
+                            apellido:"Londoño Giraldo",
+                            cedula:1054546213 ,
+                            contraseña:00000
+                            },                         
+                            
+                            {usuario:"Alex-05ospina@hotmail.com",
+                            nombre:"Alexxx",
+                            apellido:"Ospina",
+                            cedula:"30.987.987",
+                            contraseña:00000
+                            },
+
+                            {usuario:"Leonardo-12@hotmail.com",
+                            nombre:"Leonardo",
+                            apellido:"Gonzales",
+                            cedula:"24.546.987",
+                            contraseña:00000
+                            },
+
+                            {usuario:"Alonso-76@hotmail.com",
+                            nombre:"Alonso",
+                            apellido:"Castaño",
+                            cedula:"34.876.923",
+                            contraseña:00000
+                            },
+
+                    ];
+
+   let users= document.getElementById("usersTable")
+
+   let tbody = document.createElement("tbody");
+
+   users.appendChild(tbody);
+
+for(let i= 0; i < objUsuario.length; i++){
+
+            let tr = document.createElement("tr");
+
+            tbody.appendChild(tr);
+
+            let td = document.createElement("td");
+            td.innerHTML=(objUsuario[i].usuario);
+
+            tr.appendChild(td);
+
+            td = document.createElement("td");
+            td.innerHTML=(objUsuario[i].nombre);
+
+            tr.appendChild(td);
+
+            td = document.createElement("td");
+            td.innerHTML=(objUsuario[i].apellido);
+
+            tr.appendChild(td);
+
+            td = document.createElement("td");
+            td.innerHTML=(objUsuario[i].cedula);
+
+            tr.appendChild(td);
+
+            td = document.createElement("td");
+            td.innerHTML=(objUsuario[i].contraseña);
+
+            tr.appendChild(td);
+
+}
+
+           /* let users= document.getElementById("usersTable")
+                
+            let tbody = document.createElement("tbody");
+
+            users.appendChild(tbody);
+
+            let tr = document.createElement("tr");
+
+            tbody.appendChild(tr);
+
+            let tdUsuario = document.createElement("td");
+            tdUsuario.innerHTML=(objUsuario[0].usuario);
+
+            tr.appendChild(tdUsuario);
+
+            let tdNombre = document.createElement("td");
+            tdNombre.innerHTML=(objUsuario[0].nombre);
+
+            tr.appendChild(tdNombre);
+
+            let tdApellido = document.createElement("td");
+            tdApellido.innerHTML=(objUsuario[0].apellido);
+
+            tr.appendChild(tdApellido);
+
+            let tdCedula = document.createElement("td");
+            tdCedula.innerHTML=(objUsuario[0].cedula);
+
+            tr.appendChild(tdCedula);
+
+            let tdOpciones = document.createElement("td");
+            tdOpciones.innerHTML=(objUsuario[0].opciones);
+
+            tr.appendChild(tdOpciones);
+            
+            let tr1 = document.createElement("tr");
+
+            tbody.appendChild(tr1);
+
+            let tdUsuario1 = document.createElement("td");
+            tdUsuario1.innerHTML=(objUsuario[1].usuario);
+
+            tr1.appendChild(tdUsuario1);
+
+            let tdNombre1 = document.createElement("td");
+            tdNombre1.innerHTML=(objUsuario[1].nombre);
+
+            tr1.appendChild(tdNombre1);
+
+            let tdApellido1 = document.createElement("td");
+            tdApellido1.innerHTML=(objUsuario[1].apellido);
+
+            tr1.appendChild(tdApellido1);
+
+            let tdCedula1 = document.createElement("td");
+            tdCedula1.innerHTML=(objUsuario[1].cedula);
+
+            tr1.appendChild(tdCedula1);
+
+            let tdOpciones1 = document.createElement("td");
+            tdOpciones1.innerHTML=(objUsuario[1].opciones);
+
+            tr1.appendChild(tdOpciones1);
+
+            let tr2 = document.createElement("tr");
+
+            tbody.appendChild(tr2);
+
+            let tdUsuario2 = document.createElement("td");
+            tdUsuario2.innerHTML=(objUsuario[2].usuario);
+
+            tr2.appendChild(tdUsuario2);
+
+            let tdNombre2 = document.createElement("td");
+            tdNombre2.innerHTML=(objUsuario[2].nombre);
+
+            tr2.appendChild(tdNombre2);
+
+            let tdApellido2 = document.createElement("td");
+            tdApellido2.innerHTML=(objUsuario[2].apellido);
+
+            tr2.appendChild(tdApellido2);
+
+            let tdCedula2 = document.createElement("td");
+            tdCedula2.innerHTML=(objUsuario[2].cedula);
+
+            tr2.appendChild(tdCedula2);
+
+            let tdOpciones2 = document.createElement("td");
+            tdOpciones2.innerHTML=(objUsuario[2].opciones);
+
+            tr2.appendChild(tdOpciones2);
+
+            */
+
+            
+          </script>
+    
+</body>
+</html>

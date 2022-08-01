@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" method="gets">
+        <label for="numero1">Marca</label>
+        <input type="text" id="numero1" value="Nissan"><br>
+        <label for="numero1">Tipo_Carro</label>
+        <input type="text" id="numero2" value="Automovil"><br>
+        <button type="button" onclick="asignacion()">Enviar</button><br>
+        <input type="text" id="numero"><br><br>
+        <img src="/home/mario/carroimg.jpg"
+        
+            width="400"
+            height="350">
+        
+    </form> 
+    <script>
+
+        const asignacion=()=>{
+            var carro= document.getElementById("numero1").value;
+
+            var carro= document.getElementById("numero2").value;
+
+            document.getElementById("numero").value= "Nuevo";
+        }
+
+
+        const sumar=()=>{
+            var numero1= document.getElementById("numero1").value;
+
+            var numero2= document.getElementById("numero2").value;
+
+            var resultado = Number(numero1) + Number(numero2);
+
+            document.getElementById("numero").value= resultado;
+            console.log(resultado)
+        }
+
+        
+    </script>
+</body>
+</html>
